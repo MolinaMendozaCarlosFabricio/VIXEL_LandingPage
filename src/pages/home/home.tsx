@@ -11,12 +11,16 @@ import {
 import { useSailsCalls } from '@/app/hooks';
 import "./examples.css";
 import HeaderPage from '@/components/Organismos/HeaderPage/HeaderPage';
+import WelcomeToNexus from '@/components/Plantillas/WelcomeToNexus/WelcomeToNexus';
 
 
 function Home () {
     return(
         <main>
             <HeaderPage/>
+            <div>
+                <WelcomeToNexus/>
+            </div>
         </main>
     );
 }
