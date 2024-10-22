@@ -10,10 +10,21 @@ import {
 } from '@/components/ExampleComponents';
 import { useSailsCalls } from '@/app/hooks';
 import "./examples.css";
+import HeaderPage from '@/components/Organismos/HeaderPage/HeaderPage';
 
 
 function Home () {
-    const sails = useSailsCalls();
+    return(
+        <main>
+            <HeaderPage/>
+        </main>
+    );
+}
+
+export {Home };
+
+/*
+const sails = useSailsCalls();
     const { account } = useAccount();
     const { 
         currentVoucherId,
@@ -36,6 +47,7 @@ function Home () {
 
     return (
         <div className='examples-container'>
+            <HeaderPage/>
             
             <div className='examples'>
                 <div className='information'>
@@ -101,6 +113,4 @@ function Home () {
             </div>
         </div>
     );
-}
-
-export {Home };
+*/
