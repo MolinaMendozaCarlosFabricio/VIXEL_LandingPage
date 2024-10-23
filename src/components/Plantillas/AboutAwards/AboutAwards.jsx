@@ -9,18 +9,18 @@ export default function AboutAwards (){
     return(
         <section class="abaout" id="abaout">
           <div class="container">
-
+          <div className="container-tournament">
             <div class="tournament-content">
 
               <p class="tournament-subtitle">Echa un vistazo a nuestra próximo</p>
 
-              <h2 class="h3 tournament-title">¡Torneos de juegos!</h2>
+              <h2 class="h3 tournament-title">¡TORNEO DE JUEGOS!</h2>
 
               <p class="tournament-text">
                 Lpsum dolor sit amet, consectetur adipiscing elit, sed labore et dolore magna aliqua.
               </p>
 
-              <button class="btn btn-primary">Únete con nosotros</button>
+              <button class="btn btn-primary play-now-button">Únete con nosotros</button>
 
             </div>
 
@@ -28,13 +28,14 @@ export default function AboutAwards (){
 
               <h2 class="h3 tournament-prize-title">Bolsa de premios</h2>
 
-              <data value="80000">$80,000</data>
+              <data value="80000" className="tournament-prize-data">$80,000</data>
 
-              <figure>
+              <figure className="tournament-prize-img">
                 <img src={ImgPrize} alt="Prize image"/>
               </figure>
 
             </div>
+          </div>
 
             <div class="tournament-winners">
 
