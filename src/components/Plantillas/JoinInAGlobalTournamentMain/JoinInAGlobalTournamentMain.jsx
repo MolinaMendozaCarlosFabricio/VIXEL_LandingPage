@@ -3,6 +3,7 @@ import ImgPrueba from "../../../img/hero-banner.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 import ButtonWhitFunction from "@/components/Atoms/ButtonWhitFunction/ButtonWhitFunction";
+import ButtonLink from "@/components/Atoms/ButtonLink/ButtonLink";
 
 export default function JoinInAGlobalTournamentMain (){
 
@@ -22,7 +23,7 @@ export default function JoinInAGlobalTournamentMain (){
                 <h4>{objTournament.game}</h4>
                 <p>{objTournament.description}</p>
 
-                <ButtonWhitFunction action={"Unirse"}/>
+                <ButtonLink pageName={"Unirse"} linkTo={"/DataTournament"}/>
             </div>
         </main>
     );

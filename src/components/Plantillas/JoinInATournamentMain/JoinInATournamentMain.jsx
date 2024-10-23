@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./JoinInATournamentMain.css"
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
-import ButtonWhitFunction from "@/components/Atoms/ButtonWhitFunction/ButtonWhitFunction";
+import ButtonLink from "@/components/Atoms/ButtonLink/ButtonLink";
 
 export default function JoinInATournamentMain ({objTournament}){
     return(
@@ -13,7 +13,7 @@ export default function JoinInATournamentMain ({objTournament}){
                 <h4>{objTournament.game}</h4>
                 <p>{objTournament.description}</p>
 
-                <ButtonWhitFunction action={"Unirse"}/>
+                <ButtonLink pageName={"Unirse"} linkTo={"/DataTournament"}/>
             </div>
         </main>
     );

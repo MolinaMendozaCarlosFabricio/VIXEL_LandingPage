@@ -8,8 +8,6 @@ export default function GameInfo (){
             <CardGame/>
             <CardGame/>
             <CardGame/>
-            <CardGame/>
-            <CardGame/>
         </main>
     );
 }

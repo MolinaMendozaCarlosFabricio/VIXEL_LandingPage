@@ -1,6 +1,7 @@
 import LeaderBoard from "@/components/Organismos/LeaderBoard/LeaderBoard";
 import "./DataTournamentInfo.css";
 import { useState } from "react";
+import QuestBoard from "@/components/Organismos/QuestBoard/QuestBoard";
 
 export default function DataTournamentInfo (){
 
@@ -52,18 +53,18 @@ export default function DataTournamentInfo (){
         )}
         {activeTab === 'tab2' && (
           <div>
-            <h2>Contenido de la Pestaña 2</h2>
-            <p>Este es el contenido de la segunda pestaña.</p>
+            <QuestBoard frecuencyQuest={"diarias"}/>
           </div>
         )}
         {activeTab === 'tab3' && (
           <div>
-            <h2>Contenido de la Pestaña 3</h2>
-            <p>Este es el contenido de la tercera pestaña.</p>
+            <QuestBoard frecuencyQuest={"semanales"}/>
           </div>
         )}
         {activeTab === 'tab4' && (
-            <div></div>
+            <div>
+                <QuestBoard frecuencyQuest={"mensuales"}/>
+            </div>
         )}
       </div>
     </div>
