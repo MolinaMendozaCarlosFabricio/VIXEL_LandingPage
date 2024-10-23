@@ -1,17 +1,14 @@
 import React from "react";
-import "./OurGames.css";
+import "./Tournaments.css";
 import HeaderPage from "@/components/Organismos/HeaderPage/HeaderPage";
 import FooterPage from "@/components/Organismos/FooterPage/FooterPage";
-import GameInfo from "@/components/Plantillas/GameInfo/GameInfo";
 
-export default function OurGames (){
+export default function Tournaments (){
     return(
         <main>
             <HeaderPage/>
-            <diV>
-                <GameInfo/>
-            </diV>
+            <div></div>
             <FooterPage/>
         </main>
-    );
+    )
 }
