@@ -3,6 +3,7 @@ import ImgPrueba from "../../../img/hero-banner.jpg"
 import CardTournament from "@/components/Moleculas/CardTournament/CardTournament";
 import ButtonWhitFunction from "@/components/Atoms/ButtonWhitFunction/ButtonWhitFunction";
 import ButtonLink from "@/components/Atoms/ButtonLink/ButtonLink";
+import ButtonLinkButBlack from "@/components/Atoms/ButtonLinkButBlack/ButtonLinkButBlack";
 
 const prueba = {
     title: "Torneo!",
@@ -24,7 +25,7 @@ export default function MainTournaments (){
             </div>
             <div className="container-tournaments-buttons">
                 <ButtonLink pageName={"Agregar torneo"} linkTo={"/addTournament"}/>
-                <ButtonWhitFunction action={"Este botón debería ser negrito"}/>
+                <ButtonLinkButBlack pageName={"Torneo global"} linkTo={"/joinInAGloblarTournament"}/>
             </div>
         </main>
     )
