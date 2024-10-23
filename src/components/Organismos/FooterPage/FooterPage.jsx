@@ -40,27 +40,7 @@ export default function FooterPage () {
 
         </div>
 
-        <div class="footer-quicklinks">
-
-          <ul class="quicklink-list">
-
-            <QuickLinkItem hreferencia={"#"} pageToLink={"Faq"}/>
-            <QuickLinkItem hreferencia={"#"} pageToLink={"Help center"}/>
-            <QuickLinkItem hreferencia={"#"} pageToLink={"Terms of use"}/>
-            <QuickLinkItem hreferencia={"#"} pageToLink={"Privacy"}/> 
-            
-          </ul>
-
-          <ul class="footer-social-list">
-
-            <FooterSocialLink logoSocialLink={faDiscord}/>
-            <FooterSocialLink logoSocialLink={faTwitch}/>
-            <FooterSocialLink logoSocialLink={faXbox}/>
-            <FooterSocialLink logoSocialLink={faYoutube}/>
-
-          </ul>
-
-        </div>
+        
 
       </div>
     </div>

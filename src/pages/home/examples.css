@@ -207,3 +207,14 @@
   }
   
   .btn-primary { background: var(--orange); }
+
+  .play-now-button:hover {
+    background-color: white;
+    color: black;  
+    transform: scale(1.05);
+  }
+  
+  .play-now-button:active {
+    transform: scale(1); /* Vuelve a su tamaño original al hacer clic */
+    transition: transform 0.1s ease; /* Hace el cambio más rápido al hacer clic */
+  }

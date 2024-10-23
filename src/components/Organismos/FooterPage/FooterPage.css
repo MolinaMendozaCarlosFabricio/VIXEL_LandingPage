@@ -9,8 +9,6 @@
   .footer-brand-wrapper {
     position: relative;
     padding-bottom: 30px;
-    border-bottom: 1px solid hsl(220, 14%, 8%);
-    margin-bottom: 50px;
   }
   
   .footer-brand-wrapper::after {

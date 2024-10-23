@@ -5,7 +5,7 @@ import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
 
 export default function RegistrerButton (){
     return(
-        <button class="btn btn-primary">
+        <button class="btn btn-primary play-now-button">
             <span>Jugar ya!</span>
 
             <FontAwesomeIcon icon={faCirclePlay}/>
