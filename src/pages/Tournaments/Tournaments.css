@@ -215,6 +215,11 @@
   }
   
   .play-now-button:active {
-    transform: scale(1); 
-    transition: transform 0.1s ease;
+    transform: scale(1); /* Vuelve a su tamaño original al hacer clic */
+    transition: transform 0.1s ease; /* Hace el cambio más rápido al hacer clic */
+  }
+
+  .big-button {
+    width: 100%;
+    margin-top: 5%;
   }
