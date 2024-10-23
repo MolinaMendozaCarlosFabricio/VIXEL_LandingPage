@@ -41,11 +41,7 @@ export default function About (){
 
                 <img src={ImgAbout} alt="M shape" class="about-img"/>
 
-                <img src={ImgCharacter1} alt="Game character" class="character character-1"/>
-
-                <img src={ImgCharacter2} alt="Game character" class="character character-2"/>
-
-                <img src={ImgCharacter3} alt="Game character" class="character character-3"/>
+                
 
               </figure>
             </div>
@@ -59,4 +55,10 @@ export default function About (){
 /*
 <p class="about-subtitle">¿Qué tratamos de solucionar?</p>
 
+//Estas imágenes irán detrás del logo, tiene que ser las de nuestros pjs
+<img src={ImgCharacter1} alt="Game character" class="character character-1"/>
+
+                <img src={ImgCharacter2} alt="Game character" class="character character-2"/>
+
+                <img src={ImgCharacter3} alt="Game character" class="character character-3"/>
 */

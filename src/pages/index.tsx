@@ -1,10 +1,13 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Home } from "./home";
 import { Landing } from "./Landing";
+import path from "path";
+import OurGames from "./OurGames/OurGames";
 
 const routes = [
   { path: "/", Page: Landing },
   { path: "/home", Page: Home },
+  { path: "/games", Page: OurGames }
 ];
 
 function Routing() {

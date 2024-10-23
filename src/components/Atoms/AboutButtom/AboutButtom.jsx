@@ -5,10 +5,10 @@ import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function AboutButtom (){
     return (
-        <p class="about-bottom-text">
-            <FontAwesomeIcon icon={faCircleArrowRight}/>
+        <button class="about-bottom-text">
+            
 
-            <span>Registrate y juega!</span>
-        </p>
+            <span><FontAwesomeIcon icon={faCircleArrowRight}/> Registrate y juega!</span>    
+        </button>
     );
 }

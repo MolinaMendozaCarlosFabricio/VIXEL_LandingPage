@@ -32,7 +32,7 @@ export default function FooterPage () {
             </ul>
 
             <div class="footer-input-wrapper">
-              <input type="text" name="message" required placeholder="Find Here Now" class="footer-input"/>
+                <input type="text" name="message" required placeholder="Find Here Now" class="footer-input"/>
                 <SearchButton/>
             </div>
 
@@ -68,7 +68,7 @@ export default function FooterPage () {
     <div class="footer-bottom">
       <div class="container">
         <p class="copyright">
-          Copyright &copy; 2023 <a href="#">Nexus</a>. all rights reserved
+          Copyright &copy; 2024 <a href="#">VIXEL</a>. all rights reserved
         </p>
 
         <figure class="footer-bottom-img">

@@ -11,3 +11,7 @@
     font-size: 25px;
     --ionicon-stroke-width: 45px;
 }
+
+.about-bottom-text :hover {
+    color: white;
+}

@@ -1,4 +1,9 @@
-.gallery { padding: var(--section-padding) 0; }
+.gallery { 
+  padding: var(--section-padding) 0; 
+  width: 65%;
+  position: relative;
+  left: 18%;
+}
   
   .gallery-list {
     display: flex;
