@@ -1,7 +1,7 @@
 import React from "react";
 import NavbarOptions from '../../Atoms/NavbarOptions/NavbarOptions';
 import SocialOption from "../../Atoms/SocialOption/SocialOption";
-import { faTwitter, faInstagram, faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faXTwitter, faInstagram, faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import LogoPage from "../../Atoms/LogoPage/LogoPage";
 
 export default function NavbarHeader({ isNavOpen, handleNavToggle }) {
@@ -24,7 +24,7 @@ export default function NavbarHeader({ isNavOpen, handleNavToggle }) {
       </ul>
 
       <ul className="nav-social-list">
-        <SocialOption hreferencia={"#"} logoContact={faTwitter} />
+        <SocialOption hreferencia={"#"} logoContact={faXTwitter} />
         <SocialOption hreferencia={"#"} logoContact={faInstagram} />
         <SocialOption hreferencia={"#"} logoContact={faGithub} />
         <SocialOption hreferencia={"#"} logoContact={faYoutube} />
