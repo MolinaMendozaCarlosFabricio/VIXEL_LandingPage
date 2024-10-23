@@ -11,8 +11,8 @@ export default function AddTournament(){
     return(
         <main>
             <HeaderPage/>
-            <div>
-                <h2>Agregar torneo <FontAwesomeIcon icon={faTrophy}/></h2> 
+            <div className="big-content-add-tournament">
+                <h2 className="justify-this-content">Agregar torneo <FontAwesomeIcon icon={faTrophy}/></h2> 
                 <AddTournamentForm/>
                 <RgbLine/>
             </div>

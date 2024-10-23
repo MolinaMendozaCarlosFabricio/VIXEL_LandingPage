@@ -1,8 +1,9 @@
-import React from "react";
 import "./MainTournaments.css";
 import ImgPrueba from "../../../img/hero-banner.jpg"
 import CardTournament from "@/components/Moleculas/CardTournament/CardTournament";
 import ButtonWhitFunction from "@/components/Atoms/ButtonWhitFunction/ButtonWhitFunction";
+import ButtonLink from "@/components/Atoms/ButtonLink/ButtonLink";
+import ButtonLinkButBlack from "@/components/Atoms/ButtonLinkButBlack/ButtonLinkButBlack";
 
 const prueba = {
     title: "Torneo!",
@@ -11,7 +12,10 @@ const prueba = {
     srcPhoto: ImgPrueba
 }
 
+
+
 export default function MainTournaments (){
+
     return(
         <main className="tournaments-body">
             <div className="container-tournaments-list">
@@ -20,8 +24,8 @@ export default function MainTournaments (){
                 <CardTournament infoTournament={prueba}/>
             </div>
             <div className="container-tournaments-buttons">
-                <ButtonWhitFunction action={"Agregar torneo"}/>
-                <ButtonWhitFunction action={"Torneo global"}/>
+                <ButtonLink pageName={"Agregar torneo"} linkTo={"/addTournament"}/>
+                <ButtonLinkButBlack pageName={"Torneo global"} linkTo={"/joinInAGloblarTournament"}/>
             </div>
         </main>
     )

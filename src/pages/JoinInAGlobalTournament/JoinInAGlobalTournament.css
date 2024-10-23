@@ -216,5 +216,5 @@
   
   .play-now-button:active {
     transform: scale(1); 
-    transition: transform 0.1s ease;
+    transition: transform 0.1s ease; 
   }
