@@ -21,7 +21,7 @@ export default function MainTournaments (){
             </div>
             <div className="container-tournaments-buttons">
                 <ButtonWhitFunction action={"Agregar torneo"}/>
-                <ButtonWhitFunction action={"Este botón debería ser negrito"}/>
+                <ButtonWhitFunction action={"Torneo global"}/>
             </div>
         </main>
     )

@@ -25,3 +25,15 @@
         text-align: justify;
     }
 }
+
+div h4 {
+    margin-bottom: 15px; /* Espacio debajo del h4 */
+  }
+  
+  div h6 {
+    margin-bottom: 10px; /* Espacio debajo del h6 */
+  }
+  
+  div p {
+    margin-bottom: 20px; /* Espacio debajo del p */
+  }  

@@ -5,7 +5,7 @@ import { withProviders } from "@/app/hocs";
 import { useWalletSync } from "@/features/wallet/hooks";
 import { Routing } from "./pages";
 import { useInitSails } from "./app/hooks";
-import { CONTRACT_DATA, sponsorName, sponsorMnemonic } from "./app/consts";
+import { /*CONTRACT_DATA, */ VFT_MANAGER_DATA, CONTRACT_MANAGER_DATA, sponsorName, sponsorMnemonic } from "./app/consts";
 import "@gear-js/vara-ui/dist/style.css";
 
 function Component() {
@@ -15,8 +15,8 @@ function Component() {
   // Put your contract id and idl
   useInitSails({
     network: 'wss://testnet.vara.network',
-    contractId: CONTRACT_DATA.programId,
-    idl: CONTRACT_DATA.idl,
+    contractId: CONTRACT_MANAGER_DATA.programId,
+    idl: CONTRACT_MANAGER_DATA.idl,
     // You need to put name and mnemonic sponsor if you 
     // will use vouchers feature (vouchers are used for gasless,
     // and signless accounts)
