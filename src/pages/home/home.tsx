@@ -12,6 +12,8 @@ import { useSailsCalls } from '@/app/hooks';
 import "./examples.css";
 import HeaderPage from '@/components/Organismos/HeaderPage/HeaderPage';
 import WelcomeToNexus from '@/components/Plantillas/WelcomeToNexus/WelcomeToNexus';
+import RgbLine from '@/components/Atoms/RgbLine/RgbLine';
+import About from '@/components/Plantillas/About/About';
 
 
 function Home () {
@@ -20,6 +22,9 @@ function Home () {
             <HeaderPage/>
             <div>
                 <WelcomeToNexus/>
+                <RgbLine/>
+                <About/>
+                <RgbLine/>
             </div>
         </main>
     );

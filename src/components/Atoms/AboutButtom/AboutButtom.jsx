@@ -8,7 +8,7 @@ export default function AboutButtom (){
         <p class="about-bottom-text">
             <FontAwesomeIcon icon={faCircleArrowRight}/>
 
-            <span>Agudizará tu cerebro y te concentrará.</span>
+            <span>Registrate y juega!</span>
         </p>
     );
 }
