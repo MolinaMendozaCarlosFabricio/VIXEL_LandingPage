@@ -3,15 +3,16 @@ import { Home } from "./home";
 import { Landing } from "./Landing";
 import OurGames from "./OurGames/OurGames";
 import Tournaments from "./Tournaments/Tournaments";
-import path from "path";
 import AddTournament from "./AddTournament/AddTournament";
+import JoinInATournament from "./JoinInATournament/JoinInATournament";
 
 const routes = [
   { path: "/", Page: Landing },
   { path: "/home", Page: Home },
   { path: "/games", Page: OurGames },
   { path: "/tournaments", Page: Tournaments},
-  { path: "/addTournament", Page: AddTournament}
+  { path: "/addTournament", Page: AddTournament},
+  { path: "/joinInATournament", Page: JoinInATournament}
 ];
 
 function Routing() {
