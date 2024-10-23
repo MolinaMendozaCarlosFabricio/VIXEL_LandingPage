@@ -1,0 +1,16 @@
+.add-tournaments-form-body{
+    width: 80%;
+    position: relative;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.add-tournaments-from-camps {
+    width: 100%;
+}
