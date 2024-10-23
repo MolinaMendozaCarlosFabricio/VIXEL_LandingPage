@@ -2,17 +2,28 @@
     background-color: orange;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 12px 24px; /* Un poco más grande para mayor impacto */
+    font-size: 18px; /* Tamaño de fuente ligeramente mayor */
     display: inline-flex;
     align-items: center;
     justify-content: center;
     position: relative;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%, 10px calc(100% - 10px));
+    transition: all 0.3s ease; /* Transición para suavizar los cambios de tamaño y color */
+    clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px); /* Recortes en todas las esquinas de manera uniforme */
+  }
+  
+  .play-now-button:hover {
+    background-color: darkorange; /* Cambia a un tono más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Efecto de agrandado */
   }
   
   .play-now-button span {
-    margin-right: 10px;
+    margin-right: 10px; /* Espacio entre el texto y el ícono */
   }
+  
+  .play-now-button:active {
+    transform: scale(1); /* Vuelve a su tamaño original al hacer clic */
+    transition: transform 0.1s ease; /* Hace el cambio más rápido al hacer clic */
+  }
+  
