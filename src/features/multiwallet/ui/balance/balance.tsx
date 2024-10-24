@@ -19,8 +19,8 @@ const Balance = () => {
   return formattedBalance ? (
     <section>
       <Text  size="xl">
-        <span>{formattedBalance.value}</span>
-        <span>{formattedBalance.unit}</span>
+        <span style={{color:"aliceblue"}}>{formattedBalance.value}</span>
+        <span style={{color: "aliceblue"}}>{formattedBalance.unit}</span>
       </Text >
     </section>
   ) : null;

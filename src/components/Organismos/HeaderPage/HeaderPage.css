@@ -1,21 +1,26 @@
-.header {
+.header-own {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background: var(--raisin-black-1);
   box-shadow: 0 3px 27px hsla(0, 0%, 0%, 0.5);
-  padding-block: 20px;
+  padding-block: 0px; 
   z-index: 4;
 }
 
-.header .container {
+.header-own .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-actions { display: none; }
+.header-own-actions { display: none; }
+
+.right-objects {
+  display: flex;
+  gap: 3vw;
+}
 
 .nav-open-btn {
   color: var(--white);
@@ -121,7 +126,7 @@
   transition: var(--transition-3);
 }
 
-.rgb-line .separate-from-header{
+.rgb-line .separate-from-header-own{
   position: absolute;
   bottom: 50%;
 }

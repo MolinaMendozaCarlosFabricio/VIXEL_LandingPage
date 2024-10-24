@@ -218,3 +218,10 @@
     transform: scale(1); 
     transition: transform 0.1s ease;
   }
+
+.content-gamecards,
+.tournaments-body,
+.section-wrapper,
+.big-content-add-tournament {
+  margin-top: 10vh;
+}
