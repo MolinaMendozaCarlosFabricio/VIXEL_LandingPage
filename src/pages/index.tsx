@@ -7,6 +7,7 @@ import AddTournament from "./AddTournament/AddTournament";
 import JoinInATournament from "./JoinInATournament/JoinInATournament";
 import JoinInAGlobalTournament from "./JoinInAGlobalTournament/JoinInAGlobalTournament";
 import DataTournament from "./DataTournament/DataTournament";
+import Qualifying from "./Qualifying/Qualifying";
 
 const routes = [
   { path: "/", Page: Landing },
@@ -16,7 +17,8 @@ const routes = [
   { path: "/addTournament", Page: AddTournament},
   { path: "/joinInATournament", Page: JoinInATournament},
   { path: "/joinInAGloblarTournament", Page: JoinInAGlobalTournament},
-  { path: "/dataTournament", Page: DataTournament}
+  { path: "/dataTournament", Page: DataTournament},
+  { path: "/qualifying", Page: Qualifying},
 ];
 
 function Routing() {

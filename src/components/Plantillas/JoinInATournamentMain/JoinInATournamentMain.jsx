@@ -13,7 +13,7 @@ export default function JoinInATournamentMain ({objTournament}){
                 <h4>{objTournament.game}</h4>
                 <p>{objTournament.description}</p>
 
-                <ButtonLink pageName={"Unirse"} linkTo={"/DataTournament"}/>
+                <ButtonLink pageName={"Unirse"} linkTo={"/qualifying"}/>
             </div>
         </main>
     );
