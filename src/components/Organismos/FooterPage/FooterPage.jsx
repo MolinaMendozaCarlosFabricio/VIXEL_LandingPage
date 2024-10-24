@@ -17,8 +17,9 @@ export default function FooterPage () {
 
         <div class="footer-brand-wrapper">
 
-          <LogoPage/>
-
+          <div className="logo-footer-content">
+            <LogoPage/>
+          </div>
           <div class="footer-menu-wrapper">
 
             <ul class="footer-menu-list">

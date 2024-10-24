@@ -152,3 +152,7 @@
     max-width: 100%;
     margin-inline: auto;
   }
+
+  .logo-footer-content{
+    position: relative;
+  }

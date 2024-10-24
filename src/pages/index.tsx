@@ -9,6 +9,7 @@ import JoinInAGlobalTournament from "./JoinInAGlobalTournament/JoinInAGlobalTour
 import DataTournament from "./DataTournament/DataTournament";
 import path from "path";
 import { VixelPay } from "./Pay/Vixel";
+import Qualifying from "./Qualifying/Qualifying";
 
 const routes = [
   { path: "/", Page: Landing },
@@ -18,8 +19,7 @@ const routes = [
   { path: "/addTournament", Page: AddTournament},
   { path: "/joinInATournament", Page: JoinInATournament},
   { path: "/joinInAGloblarTournament", Page: JoinInAGlobalTournament},
-  { path: "/dataTournament", Page: DataTournament},
-  {path: "/pay", Page: VixelPay}
+  { path: "/dataTournament", Page: DataTournament}
 ];
 
 function Routing() {
