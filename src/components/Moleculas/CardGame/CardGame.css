@@ -10,8 +10,8 @@
 }
 
 .card {
-  width: 24rem;
-  height: 36rem;
+  width: 44rem;
+  height: 26rem;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -76,4 +76,11 @@
 
 .material-symbols-outlined {
   vertical-align: middle;
+}
+
+.play-now {
+  width: 200%;
+  background-color: rgb(206, 134, 0);
+  padding-left: 5%;
+  padding-right: 5%;
 }

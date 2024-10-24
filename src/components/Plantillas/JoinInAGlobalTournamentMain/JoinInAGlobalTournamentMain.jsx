@@ -1,9 +1,19 @@
+import "./JoinInAGlobalTournamentMain.css";
+import ImgPrueba from "../../../img/hero-banner.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./JoinInATournamentMain.css"
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
+import ButtonWhitFunction from "@/components/Atoms/ButtonWhitFunction/ButtonWhitFunction";
 import ButtonLink from "@/components/Atoms/ButtonLink/ButtonLink";
 
-export default function JoinInATournamentMain ({objTournament}){
+export default function JoinInAGlobalTournamentMain (){
+
+    const objTournament = {
+        title: "Torneo mundial de tetris!",
+        game: "Tetris",
+        description: "Campeones de tetris, preparen sus dedos porque se viene el torneo de tetris, donde competirán contra los demás para sobrevivir a la oleada de figuras, buena suerte campeones!",
+        srcPhoto: ImgPrueba
+    }
+
     return(
         <main className="boyd-join-in-a-tournament">
             <h2 className="justify-this-content">Agregar torneo <FontAwesomeIcon icon={faTrophy}/></h2> 
