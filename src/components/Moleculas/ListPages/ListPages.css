@@ -1,4 +1,5 @@
 .another-navbar {
+    width: 40vw;
     display: flex; /* Cambia los elementos a una fila horizontal */
     justify-content: space-around; /* Distribuye los elementos de forma uniforme */
     list-style: none; /* Elimina los puntos de la lista */

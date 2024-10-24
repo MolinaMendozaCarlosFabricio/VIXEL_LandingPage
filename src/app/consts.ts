@@ -25,9 +25,9 @@ export const ROUTES = {
 export const sponsorName = 'Alice';
 export const sponsorMnemonic = 'bottom drive obey lake curtain smoke basket hold race lonely fit walk';
 // El CONTRACT_DATA solo es un ejemplo de este template, ya que es un contrato inteligente de vara para hacer las transacciones de prueba, en cambio los otros dos son mios, utilizando asi vft, porque eso me sirva
-/*
+
 export const CONTRACT_DATA: ContractSails = {
-  programId: '0x58a7f204ef68aed35d88bf7578ddfd078bceadb74942be470349ab981963cb86',
+  programId: '0x615556ca4bb31c9b3b9a5c30b20e110ffd51ffc78784308ea6ac2f9fbac13aa5',
   idl: `
     type KeyringData = struct {
       address: str,
@@ -86,7 +86,7 @@ export const CONTRACT_DATA: ContractSails = {
       query KeyringAddressFromUserCodedName : (user_coded_name: str) -> KeyringQueryEvent;
     };
   `
-};*/
+};
 
 export const CONTRACT_MANAGER_DATA: ContractSails = {
   programId: '0x822489c083f9b8d6bb895681a33092e010a1b335f421258efab3cd7e353222a6',

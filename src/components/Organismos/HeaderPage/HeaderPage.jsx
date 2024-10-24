@@ -8,9 +8,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import RgbLine from "../../Atoms/RgbLine/RgbLine";
 import ListPages from "@/components/Moleculas/ListPages/ListPages";
+import { Header } from "@/components/layout";
+import { useAccount } from "@gear-js/react-hooks";
+
 
 export default function HeaderPage() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const {isAccountReady} = useAccount();
 
   const handleNavToggle = () => {
     setIsNavOpen(!isNavOpen);
@@ -26,24 +30,24 @@ export default function HeaderPage() {
   }, [isNavOpen]);
 
   return (
-    <header className="header">
+    <header className="header-own">
       <div className={`overlay ${isNavOpen ? "active" : ""}`} onClick={handleNavToggle}></div>
 
       <div className="container">
         <LogoPage/>
 
         <ListPages/>
-        
-        <button className="nav-open-btn" onClick={handleNavToggle}>
-          <FontAwesomeIcon icon={faBars}/>
-        </button>
+
+        <div className="right-objects">
+          <Header isAccountVisible={isAccountReady} />
+          <button className="nav-open-btn" onClick={handleNavToggle}>
+            <FontAwesomeIcon icon={faBars}/>
+          </button>
+        </div>
 
         <NavbarHeader isNavOpen={isNavOpen} handleNavToggle={handleNavToggle} />
 
-        <div className="header-actions">
-          <SearchButton />
-          <LoginButton />
-        </div>
+        
       </div>
       <div class="rgb-line separate-from-header"/>
     </header>

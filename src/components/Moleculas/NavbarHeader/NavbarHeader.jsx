@@ -3,6 +3,7 @@ import NavbarOptions from '../../Atoms/NavbarOptions/NavbarOptions';
 import SocialOption from "../../Atoms/SocialOption/SocialOption";
 import { faXTwitter, faInstagram, faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import LogoPage from "../../Atoms/LogoPage/LogoPage";
+import { Header } from "@/components/layout";
 
 export default function NavbarHeader({ isNavOpen, handleNavToggle }) {
   return (

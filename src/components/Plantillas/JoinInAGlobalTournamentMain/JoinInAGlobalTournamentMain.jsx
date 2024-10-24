@@ -2,7 +2,7 @@ import "./JoinInAGlobalTournamentMain.css";
 import ImgPrueba from "../../../img/hero-banner.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
-import ButtonWhitFunction from "@/components/Atoms/ButtonWhitFunction/ButtonWhitFunction";
+import ButtonPay from "@/components/Atoms/ButtonPay/ButtonPay";
 
 export default function JoinInAGlobalTournamentMain (){
 
@@ -22,7 +22,7 @@ export default function JoinInAGlobalTournamentMain (){
                 <h4>{objTournament.game}</h4>
                 <p>{objTournament.description}</p>
 
-                <ButtonWhitFunction action={"Unirse"}/>
+                <ButtonPay action={"Unirse" } linkTo={"/pay"} pageName="Unirse"/>
             </div>
         </main>
     );
