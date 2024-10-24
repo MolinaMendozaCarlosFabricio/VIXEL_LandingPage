@@ -1,6 +1,6 @@
 import React from "react";
 import "./LogoPage.css";
-import GameXLogo from '../../../icons/logo.svg';
+import GameXLogo from '../../../icons/logito.png';
 
 export default function LogoPage (){
     return(
