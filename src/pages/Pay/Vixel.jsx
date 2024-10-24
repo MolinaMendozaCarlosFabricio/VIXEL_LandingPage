@@ -22,7 +22,7 @@ function VixelPay(){
     const [pageSignlessMode, setPageSignlessMode] = useState(false);
     const [voucherModeInPolkadotAccount, setVoucherModeInPolkadotAccount] = useState(false);
     const [contractState, setContractState] = useState("");
-
+//ola vv
     useEffect(() => {
         if (!account) {
             setPageSignlessMode(true);
