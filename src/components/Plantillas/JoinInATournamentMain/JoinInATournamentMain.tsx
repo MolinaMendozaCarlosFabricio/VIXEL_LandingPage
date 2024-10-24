@@ -1,16 +1,23 @@
-import { Button } from '@gear-js/vara-ui';
-import "./JoinInAGlobalTournamentMain.css";
-import ImgPrueba from "../../../img/hero-banner.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./JoinInATournamentMain.css"
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from "react-router-dom"; // Importamos useNavigate
+import ButtonLink from "@/components/Atoms/ButtonLink/ButtonLink";
+import { useNavigate } from "react-router-dom";
 import { useSailsCalls } from '@/app/hooks';
 import { useAccount, useAlert } from '@gear-js/react-hooks';
 import { Codec, CodecClass, Signer } from '@polkadot/types/types';
 import { HexString } from '@gear-js/api';
 import { web3FromSource } from '@polkadot/extension-dapp';
+import { Button } from '@gear-js/vara-ui';
 
-export default function JoinInAGlobalTournamentMain() {
+type Torn = {
+    title: string,
+    game: string,
+    description: string,
+    srcPhoto: string
+}
+
+export default function JoinInATournamentMain ({ objTournament }: { objTournament: Torn }){
     const { account } = useAccount();
     const sails = useSailsCalls();
     const alert = useAlert();
@@ -29,23 +36,15 @@ export default function JoinInAGlobalTournamentMain() {
             resolve([account.decodedAddress, temp]);
         });
     };
-
-    const objTournament = {
-        title: "Torneo mundial de tetris!",
-        game: "Tetris",
-        description: "Campeones de tetris, preparen sus dedos porque se viene el torneo de tetris, donde competirán contra los demás para sobrevivir a la oleada de figuras, buena suerte campeones!",
-        srcPhoto: ImgPrueba
-    };
-
-    return (
+    
+    return(
         <main className="boyd-join-in-a-tournament">
-            <h2 className="justify-this-content">Agregar torneo <FontAwesomeIcon icon={faTrophy} /></h2>
+            <h2 className="justify-this-content">Agregar torneo <FontAwesomeIcon icon={faTrophy}/></h2> 
             <div className="content-info-tournament-to-join">
                 <h2>{objTournament.title}</h2>
-                <img src={objTournament.srcPhoto} alt="Imagen del torneo" />
+                <img src={objTournament.srcPhoto}/>
                 <h4>{objTournament.game}</h4>
                 <p>{objTournament.description}</p>
-
                 <Button onClick={async () => {
                     if (!sails) {
                         alert.error('SailsCalls is not ready!');
@@ -79,7 +78,7 @@ export default function JoinInAGlobalTournamentMain() {
                         alert.error('Error while sending message');
                     }
                 }}>
-                    UNIRME
+                    Unirme
                 </Button>
             </div>
         </main>

@@ -12,8 +12,6 @@ const prueba = {
     srcPhoto: ImgPrueba
 }
 
-
-
 export default function MainTournaments (){
 
     return(

@@ -222,6 +222,7 @@
 .content-gamecards,
 .tournaments-body,
 .section-wrapper,
-.big-content-add-tournament {
+.big-content-add-tournament,
+.tabs-body {
   margin-top: 10vh;
 }

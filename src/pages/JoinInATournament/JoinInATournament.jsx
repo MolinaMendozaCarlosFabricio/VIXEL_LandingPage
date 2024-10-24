@@ -5,6 +5,7 @@ import FooterPage from "@/components/Organismos/FooterPage/FooterPage";
 import JoinInATournamentMain from "@/components/Plantillas/JoinInATournamentMain/JoinInATournamentMain";
 import { useLocation } from "react-router-dom";
 
+
 export default function JoinInATournament (){
 
     const location = useLocation();

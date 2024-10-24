@@ -1,16 +1,14 @@
-import { Button } from '@gear-js/vara-ui';
-import "./JoinInAGlobalTournamentMain.css";
-import ImgPrueba from "../../../img/hero-banner.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrophy } from "@fortawesome/free-solid-svg-icons";
+import ButtonWhitFunction from "@/components/Atoms/ButtonWhitFunction/ButtonWhitFunction";
+import "./AddTournamentForm.css";
 import { useNavigate } from "react-router-dom"; // Importamos useNavigate
 import { useSailsCalls } from '@/app/hooks';
 import { useAccount, useAlert } from '@gear-js/react-hooks';
 import { Codec, CodecClass, Signer } from '@polkadot/types/types';
 import { HexString } from '@gear-js/api';
 import { web3FromSource } from '@polkadot/extension-dapp';
+import { Button } from '@gear-js/vara-ui';
 
-export default function JoinInAGlobalTournamentMain() {
+export default function AddTournamentForm (){
     const { account } = useAccount();
     const sails = useSailsCalls();
     const alert = useAlert();
@@ -29,24 +27,43 @@ export default function JoinInAGlobalTournamentMain() {
             resolve([account.decodedAddress, temp]);
         });
     };
-
-    const objTournament = {
-        title: "Torneo mundial de tetris!",
-        game: "Tetris",
-        description: "Campeones de tetris, preparen sus dedos porque se viene el torneo de tetris, donde competirán contra los demás para sobrevivir a la oleada de figuras, buena suerte campeones!",
-        srcPhoto: ImgPrueba
-    };
-
-    return (
-        <main className="boyd-join-in-a-tournament">
-            <h2 className="justify-this-content">Agregar torneo <FontAwesomeIcon icon={faTrophy} /></h2>
-            <div className="content-info-tournament-to-join">
-                <h2>{objTournament.title}</h2>
-                <img src={objTournament.srcPhoto} alt="Imagen del torneo" />
-                <h4>{objTournament.game}</h4>
-                <p>{objTournament.description}</p>
-
-                <Button onClick={async () => {
+    
+    return(
+        <main className="add-tournaments-form-body">
+        
+            <div className="add-tournaments-from-camps">
+                <h1>Nombre</h1>
+                <input type="text" id="get-name-tournament"/>
+            </div>
+            <div className="add-tournaments-from-camps">
+                <h1>Cantidad de participantes</h1>
+                <input type="number" id="get-participants-tournament"/>
+            </div>
+            <div className="add-tournaments-from-camps">
+                <h1>Costo</h1>
+                <input type="number" id="get-prize-tournament"/>
+            </div>
+            <div className="add-tournaments-from-camps">
+                <h1>Juego</h1>
+                <select id="get-game-tournament">
+                    <option>Juego 1</option>
+                    <option>Juego 2</option>
+                    <option>Juego 3</option>
+                </select>
+            </div>
+            <div className="add-tournaments-from-camps">
+                <h1>Tipo de premio</h1>
+                <select id="get-trophy-tournament">
+                    <option>Etherium</option>
+                    <option>NFT</option>
+                    <option>Otro</option>
+                </select>
+            </div>
+            <div className="add-tournaments-from-camps">
+                <h1>Fecha</h1>
+                <input type="date" id="get-date-tournament"/>
+            </div>
+            <Button onClick={async () => {
                     if (!sails) {
                         alert.error('SailsCalls is not ready!');
                         return;
@@ -79,9 +96,8 @@ export default function JoinInAGlobalTournamentMain() {
                         alert.error('Error while sending message');
                     }
                 }}>
-                    UNIRME
+                    Crear
                 </Button>
-            </div>
         </main>
-    );
+    )
 }
