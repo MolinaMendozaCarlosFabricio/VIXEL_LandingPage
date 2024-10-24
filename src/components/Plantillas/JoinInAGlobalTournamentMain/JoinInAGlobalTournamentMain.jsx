@@ -22,7 +22,7 @@ export default function JoinInAGlobalTournamentMain (){
                 <h4>{objTournament.game}</h4>
                 <p>{objTournament.description}</p>
 
-                <ButtonWhitFunction action={"Unirse"}/>
+                <ButtonPay action={"Unirse"} pageName='Unirse' />
             </div>
         </main>
     );

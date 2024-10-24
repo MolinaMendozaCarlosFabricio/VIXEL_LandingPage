@@ -19,7 +19,9 @@ const routes = [
   { path: "/addTournament", Page: AddTournament},
   { path: "/joinInATournament", Page: JoinInATournament},
   { path: "/joinInAGloblarTournament", Page: JoinInAGlobalTournament},
-  { path: "/dataTournament", Page: DataTournament}
+  { path: "/dataTournament", Page: DataTournament},
+  {path: "/qualifying", Page: Qualifying},
+  {path: "/pay", Page: VixelPay},
 ];
 
 function Routing() {
