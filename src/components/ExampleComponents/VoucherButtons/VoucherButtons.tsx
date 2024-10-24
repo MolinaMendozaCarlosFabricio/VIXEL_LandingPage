@@ -12,7 +12,7 @@ import { Codec, CodecClass, Signer } from '@polkadot/types/types';
 
 export const VoucherButtons = () => {
     const { account } = useAccount();
-    const { 
+    const {     
         currentVoucherId,
         setCurrentVoucherId
     } = useContext(dAppContext);
