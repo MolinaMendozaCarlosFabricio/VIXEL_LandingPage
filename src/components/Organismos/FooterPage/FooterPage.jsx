@@ -1,12 +1,8 @@
-import React from "react";
 import './FooterPage.css';
-import { faTwitch, faDiscord, faXbox, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import FooterMenuLink from "../../Atoms/FooterMenuLink/FooterMenuLink"
-import FooterSocialLink from "../../Atoms/FooterSocialLink/FooterSocialLink";
-import QuickLinkItem from "../../Atoms/QuickLinkItem/QuickLinkItem";
 import LogoPage from "../../Atoms/LogoPage/LogoPage";
 import SearchButton from "../../Atoms/SearchButton/SearchButton";
-import FooterBottomImg from "../../../img/footer-bottom-img.png"
+import FooterBottomImg from "../../../img/Another-vara-baner.png"
 
 export default function FooterPage () {
     return(

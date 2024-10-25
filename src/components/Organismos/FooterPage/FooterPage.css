@@ -148,11 +148,15 @@
   }
   
   .footer-bottom-img img {
-    width: max-content;
+    width: 5%;
     max-width: 100%;
     margin-inline: auto;
   }
 
   .logo-footer-content{
     position: relative;
+  }
+
+  .foto-banner-vara{
+    width: 10%;
   }
