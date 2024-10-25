@@ -29,7 +29,7 @@ export default function StreamMain (){
     }
 
     const objStream4 = {
-        srcPortada: ImgStream1,
+        srcPortada: ImgStream4,
         views: 1076,
         title: "PVP insano wasa",
         nameStreamer: "User pvp"
