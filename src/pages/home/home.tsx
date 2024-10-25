@@ -11,12 +11,26 @@ import {
 import { useSailsCalls } from '@/app/hooks';
 import "./examples.css";
 import HeaderPage from '@/components/Organismos/HeaderPage/HeaderPage';
+import WelcomeToNexus from '@/components/Plantillas/WelcomeToNexus/WelcomeToNexus';
+import RgbLine from '@/components/Atoms/RgbLine/RgbLine';
+import About from '@/components/Plantillas/About/About';
+import Galery from '@/components/Organismos/Galery/Galery';
+import AboutAwards from '@/components/Plantillas/AboutAwards/AboutAwards';
+import FooterPage from '@/components/Organismos/FooterPage/FooterPage';
 
 
 function Home () {
     return(
         <main>
             <HeaderPage/>
+            <div className='section-wrapper'>
+                <WelcomeToNexus/>
+                <About/>
+                <Galery/>
+                <AboutAwards/>
+                <RgbLine/>
+            </div>
+            <FooterPage/>
         </main>
     );
 }

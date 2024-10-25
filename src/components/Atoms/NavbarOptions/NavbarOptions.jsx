@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function NavbarOptions ({hreferencia, pageName}){
     return(
         <li>
-            <a href={hreferencia} class="navbar-link">{pageName}</a>
+            <Link to={hreferencia} className="navbar-link">{pageName}</Link>
         </li>
     );
 }

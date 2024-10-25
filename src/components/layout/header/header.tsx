@@ -12,7 +12,7 @@ export function Header({ isAccountVisible }: Props) {
 
   return (
     <header className={styles.header}>
-      <Logo />
+     { /*<Logo />*/}
       {isAccountVisible && <MultiWallet/>}
     </header>
   );

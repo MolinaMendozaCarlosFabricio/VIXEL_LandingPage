@@ -183,4 +183,46 @@
       background-position: 0% 50%;
     }
   }
+
+  .section-wrapper {
+    background: url("../../img/section-wrapper-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .btn {
+    color: var(--white);
+    font-family: var(--ff-oswald);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-500);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 34px;
+    clip-path: var(--polygon-1);
+    transition: var(--transition-1);
+  }
   
+  .btn-primary { background: var(--orange); }
+
+  .play-now-button:hover {
+    background-color: white;
+    color: black;  
+    transform: scale(1.05);
+  }
+  
+  .play-now-button:active {
+    transform: scale(1); 
+    transition: transform 0.1s ease;
+  }
+
+.content-gamecards,
+.tournaments-body,
+.section-wrapper,
+.big-content-add-tournament,
+.tabs-body {
+  margin-top: 10vh;
+}

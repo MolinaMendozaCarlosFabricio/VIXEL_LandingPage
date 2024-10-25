@@ -17,8 +17,9 @@ export default function FooterPage () {
 
         <div class="footer-brand-wrapper">
 
-          <LogoPage/>
-
+          <div className="logo-footer-content">
+            <LogoPage/>
+          </div>
           <div class="footer-menu-wrapper">
 
             <ul class="footer-menu-list">
@@ -32,7 +33,7 @@ export default function FooterPage () {
             </ul>
 
             <div class="footer-input-wrapper">
-              <input type="text" name="message" required placeholder="Find Here Now" class="footer-input"/>
+                <input type="text" name="message" required placeholder="Find Here Now" class="footer-input"/>
                 <SearchButton/>
             </div>
 
@@ -40,27 +41,7 @@ export default function FooterPage () {
 
         </div>
 
-        <div class="footer-quicklinks">
-
-          <ul class="quicklink-list">
-
-            <QuickLinkItem hreferencia={"#"} pageToLink={"Faq"}/>
-            <QuickLinkItem hreferencia={"#"} pageToLink={"Help center"}/>
-            <QuickLinkItem hreferencia={"#"} pageToLink={"Terms of use"}/>
-            <QuickLinkItem hreferencia={"#"} pageToLink={"Privacy"}/> 
-            
-          </ul>
-
-          <ul class="footer-social-list">
-
-            <FooterSocialLink logoSocialLink={faDiscord}/>
-            <FooterSocialLink logoSocialLink={faTwitch}/>
-            <FooterSocialLink logoSocialLink={faXbox}/>
-            <FooterSocialLink logoSocialLink={faYoutube}/>
-
-          </ul>
-
-        </div>
+        
 
       </div>
     </div>
@@ -68,7 +49,7 @@ export default function FooterPage () {
     <div class="footer-bottom">
       <div class="container">
         <p class="copyright">
-          Copyright &copy; 2023 <a href="#">Nexus</a>. all rights reserved
+          Copyright &copy; 2024 <a href="#">VIXEL</a>. all rights reserved
         </p>
 
         <figure class="footer-bottom-img">

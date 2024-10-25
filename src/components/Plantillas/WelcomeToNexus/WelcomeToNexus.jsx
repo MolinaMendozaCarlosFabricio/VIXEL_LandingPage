@@ -7,9 +7,9 @@ export default function WelcomeToNexus (){
     <section class="hero" id="hero">
         <div class="container">
 
-          <p class="hero-subtitle">La Temporada 1</p>
+          <p class="hero-subtitle">Bienvenidos a</p>
 
-          <h1 class="h1 hero-title">Nexus</h1>
+          <h1 class="hero-title">VIXEL (Aquí debería ir el logo)</h1>
 
           <div class="btn-group">
 

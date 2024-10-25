@@ -1,5 +1,6 @@
 .footer-top {
-    background: url("../images/footer-bg.jpg") no-repeat;
+    color: rgb(78, 78, 78);
+    background: url("../../../img/footer-bg.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     padding: var(--section-padding) 0;
@@ -8,8 +9,6 @@
   .footer-brand-wrapper {
     position: relative;
     padding-bottom: 30px;
-    border-bottom: 1px solid hsl(220, 14%, 8%);
-    margin-bottom: 50px;
   }
   
   .footer-brand-wrapper::after {
@@ -38,7 +37,7 @@
   }
   
   .footer-menu-link {
-    color: var(--platinum);
+    color: gray;
     font-family: var(--ff-oswald);
     font-size: var(--fs-8);
     font-weight: var(--fw-500);
@@ -51,6 +50,7 @@
   .footer-menu-link:is(:hover, :focus) { color: var(--orange); }
   
   .footer-input-wrapper {
+    display: flex;
     position: relative;
     max-width: 260px;
     margin-inline: auto;
@@ -151,4 +151,8 @@
     width: max-content;
     max-width: 100%;
     margin-inline: auto;
+  }
+
+  .logo-footer-content{
+    position: relative;
   }

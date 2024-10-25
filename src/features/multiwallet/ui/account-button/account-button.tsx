@@ -14,7 +14,7 @@ const AccountButton = ({ name, address, className, onClick }: Props) => {
     <button type="button" onClick={onClick}>
       <HStack>
         <Identicon value={address} size={24} theme="polkadot" />
-        <span style={{ marginLeft: "8px" }}>
+        <span style={{ marginLeft: "8px", color: "aliceblue" }}>
           <Heading size="xs">{name}</Heading>
         </span>
       </HStack>

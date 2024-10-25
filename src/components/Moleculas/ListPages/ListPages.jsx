@@ -4,12 +4,12 @@ import NavbarOptions from "@/components/Atoms/NavbarOptions/NavbarOptions";
 
 export default function ListPages (){
     return(
-        <nav className="another-navbar">
-            <ul>
-                <NavbarOptions hreferencia={"#"} pageName={"Inicio"}/>
-                <NavbarOptions hreferencia={"#"} pageName={"Juegos"}/>
-                <NavbarOptions hreferencia={"#"} pageName={"Torneos"}/>
-                <NavbarOptions hreferencia={"#"} pageName={"Equpos"}/>
+        <nav>
+            <ul className="another-navbar">
+                <NavbarOptions hreferencia={"/home"} pageName={"Inicio"}/>
+                <NavbarOptions hreferencia={"/games"} pageName={"Juegos"}/>
+                <NavbarOptions hreferencia={"/tournaments"} pageName={"Torneos"}/>
+                <NavbarOptions hreferencia={"#"} pageName={"Streams"}/>
                 <NavbarOptions hreferencia={"#"} pageName={"Más"}/>
             </ul>
         </nav>

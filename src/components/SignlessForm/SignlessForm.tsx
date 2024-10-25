@@ -10,7 +10,7 @@ import CryptoJs from 'crypto-js';
 import './SignlessForm.css';
 
 
-interface Props {
+interface Props {   
     closeForm: any
 }
 

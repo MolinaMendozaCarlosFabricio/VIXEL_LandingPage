@@ -2,9 +2,27 @@
     color: var(--white);
     font-size: 15px;
     padding: 10px 25px;
-    border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
     font-weight: var(--fw-500);
-    transition: 0.15s ease-in-out;
-}
+    text-decoration: none;
+    position: relative; /* Necesario para la línea naranja */
+    transition: color 0.15s ease-in-out;
+  }
   
-.navbar-link:is(:hover, :focus) { color: var(--orange); }
+  .navbar-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--orange);
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .navbar-link:is(:hover, :focus) {
+    color: var(--orange);
+  }
+  
+  .navbar-link:is(:hover, :focus)::after {
+    width: 100%; /* Aparece la línea naranja */
+  }
